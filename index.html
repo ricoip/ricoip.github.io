@@ -1,28 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ricoip.com… is under construction!</title>
-    <meta name="description" content="Sorry about that.">
-    <meta name="author" content="ricoip">
-    <meta name="color-scheme" content="only light">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-</head>    
-<body>
-    <div class="notice" id="notice-top">
-        <span class="emoji">ℹ</span> Schoolwork is taking a huge chunk of my time. I expect this site to be up in summer 2023.
+<html>
+  <head>
+    <title>ricoip.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap");
+      * {
+        margin: 0; /* user-agent css reset */
+        padding: 0;
+      }
+      body {
+        font-family: "M PLUS Code Latin", monospace;
+        font-optical-sizing: auto;
+        font-weight: 350;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        background-color: antiquewhite;
+        margin: 10vh 20vw;
+        max-width: 60vw;
+      }
+      @media screen and (max-aspect-ratio: 1/1) {
+        body {
+          margin: 5vh 15vw;
+        }
+      }
+      h1, h2, h3, h4, h5, h6 {
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+      }
+      ul {
+        padding-left: 1rem;
+      }
+      .no-bullets ul {
+        list-style: none;
+        padding: 0;
+      }
+      #currplay, #affliation { /* incomplete sections */
+        display: none;
+      }
+      a {
+        color: darkblue;
+      }
+      hgroup {
+        padding-top: 0;
+        padding-bottom: 1rem;
+      }
+      #give-me-money hgroup h3:hover {
+        content: "give me money";
+      }
+    </style>
+  </head>
+  <body>
+    <hgroup>
+      <h1>Rico Ip</h1>
+      <p>~/umac/fst/<a href="https://www.cis.um.edu.mo/" hreflang="en">dcis</a>/, first year</p>
+      <p><a href="https://en.pronouns.page/@ricoip">he/him</a></p>
+    </hgroup>
+    <ul id="links">
+      <li><a href="https://x.com/ricoipwk" rel="me">x</a></li>
+      <li><a href="https://www.last.fm/user/ricoip">last.fm</a></li>
+      <li><a href="https://github.com/ricoip">github</a></li>
+      <!-- this will be a feature i promise -->
+      <!-- <ul id="currplay">
+        <li>
+          <p>currently playing: <span></span></p>
+        </li>
+      </ul> -->
+      <li><a href="https://kei.bearblog.dev/">blog</a>: <i>coming soon</i></li>
+    </ul>
+    <details>
+      <summary>view more socials</summary>
+      <ul id="more-links">
+        <li><a href="https://mastodon.social/@ricoip" rel="me">mastodon(.social)</a></li>
+        <li><a href="https://bsky.app/profile/ricoip.com" rel="me">bsky</a></li>
+      </ul>
+    </details>
+    <div id="affliation" class="no-bullets">
+      <h3>affliation, work history</h3>
+      <ul>
+        <li>N/A</li>
+      </ul>
     </div>
-
-    <div class="content">
-        <h1>ricoip.com</h1>
-        …is under construction!
+    <div id="stuff">
+      <h3>stuffs</h3>
+      <ul>
+        <li><a href="https://github.com/ricoip/ricoip.github.io">this website</a></li>
+        <li>project <a href="https://github.com/ricoip/Skyedge">skyedge</a>: <i>coming soon</i></li>
+        <li>project <a href="https://github.com/ricoip/mindreder">mindreder</a>: <i>coming soon</i></li>
+      </ul>
     </div>
-
-    <div class="notice" id="notice-bottom">
-        In the meantime, why not <a rel="me" rel="noopener" referrerpolicy="no-referrer" href="https://mastodon.social/@ricoip" hreflang="en" target="_blank">follow me on Mastodon</a>?
+    <div>
+      <h3>faq</h3>
+      <ul>
+        <li>
+          <p><i>why website?</i></p>
+          <p>although link aggregation like linktree, carrd, lit.link and portaly are cool, i would like to have something that <i>i</i> own, instead of having a third party website where my links may be taken away at any moment.</p>
+        </li>
+        <li>
+          <p><i>why does this look so ugly?</i></p>
+          <p>ouch.<br>i got tired of having a placeholder page up for the past two and a half years, so while i'm learning actual web development (you will notice that this page has no javascript whatsoever, just like all of my websites for the past four years), you just have to suffer for this :)</p>
+        </li>
+      </ul>
     </div>
-</body>
+    <!-- <div id="give-me-money">
+      <hgroup>
+        <h3>hire (or contract!)   me</h3>
+        <p>please give me money i am poor</p>
+      </hgroup>
+      <ul>
+        <li>linkedin</li>
+        <li>cv</li>
+        <li><a href="https://github.com/ricoip">github</a></li>
+      </ul>
+    </div> -->
+  </body>
 </html>
