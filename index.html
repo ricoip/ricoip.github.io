@@ -25,6 +25,13 @@
         margin: 10vh 20vw;
         max-width: 60vw;
       }
+      .force-mono {
+        font-family: "M PLUS Code Latin", monospace;
+        font-optical-sizing: auto;
+        font-weight: 350;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+      }
       @media screen and (max-aspect-ratio: 1/1) {
         body {
           margin: 5vh 15vw;
@@ -42,9 +49,13 @@
         padding: 0;
       }
       .alert {
-        padding: 5rem;
+        padding: 2.5rem;
         border-radius: .5rem;
         background-color: lightcoral;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI Variable", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      .hidden {
+        visibility: hidden;
       }
       #currplay, #affliation { /* incomplete sections */
         display: none;
@@ -62,10 +73,10 @@
     </style>
   </head>
   <body>
-    <hgroup class="alert notice" id="notice-top">
+    <hgroup class="alert notice font-override" id="notice-top">
       <h2>NEW: Email Security Updates</h2>
-      <p>I have updated some email security settings for correspondents from/to <code>ricoip.com</code>, namely SPF and DMARC.</p>
-      <p>However, should cause no issues with email delivery. No actions are required for visitors and people looking to reach out to me.</p>
+      <p>I have updated some email security settings for correspondents to/from <code class="force-mono">ricoip.com</code>, namely SPF and DMARC.</p>
+      <p>However, this should cause no issues with email delivery. No actions are required for visitors and people looking to reach out to me.</p>
       <p><br>~ Rico<br>2025.01.13</p>
     </hgroup>
 
@@ -88,8 +99,8 @@
       <summary>view more socials</summary>
       <ul id="more-links">
         <li><a href="https://mastodon.social/@ricoip" rel="me">mastodon(.social)</a></li>
-      <li><a href="https://x.com/ricoipwk" rel="me">x (prev. twitter)</a></li>
-      <li><a href="https://bsky.app/profile/ricoip.com" rel="me">bsky</a></li>
+        <li><a href="https://x.com/ricoipwk" rel="me">x (prev. twitter)</a></li>
+        <li><a href="https://bsky.app/profile/ricoip.com" rel="me">bsky</a></li>
       </ul>
     </details>
     <div id="affliation" class="no-bullets">
